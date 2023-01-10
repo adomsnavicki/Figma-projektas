@@ -1,0 +1,74 @@
+.container-main {
+  padding: 30px 0 30px 0;
+}
+
+.main-content {
+  @include xxl {
+    margin: 100px 0 0 50px;
+  }
+  @include md {
+    margin: 0;
+  }
+  .button-link {
+    @include xs {
+      height: 16px;
+    }
+  }
+
+  margin: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  .left-side {
+    @include xl {
+      width: 100%;
+    }
+    @include md {
+      width: 70%;
+    }
+    display: flex;
+    align-items: center;
+    .box {
+      @include md {
+        margin-left: 50px;
+      }
+      @include xs {
+        margin-left: 0;
+      }
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box-bubble {
+      display: block;
+      position: absolute;
+      left: 20%;
+    }
+    .box-h1 {
+      @include xl {
+        font-size: 24px;
+      }
+      @include md {
+        font-size: 24px;
+      }
+      @include xs {
+        font-size: 16px;
+      }
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+    .box-p {
+      @include xs {
+        font-size: 16px;
+        width: 50%;
+      }
+      width: 80%;
+      font-size: $font-size-20px;
+    }
+  }
+  .right-side {
+    @include xl {
+      width: 100%;
+    }
+  }
+}

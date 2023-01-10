@@ -1,0 +1,25 @@
+@import "scss/responsive";
+@import "scss/variables";
+@import "scss/base";
+@import "scss/header";
+@import "scss/box-button";
+@import "scss/main";
+@import "scss/main-services";
+@import "scss/support-title";
+@import "scss/support-boxes";
+@import "scss/about-us";
+@import "scss/slide-buttons";
+@import "scss/slide-boxes";
+@import "scss/footer";
+@import "scss/line-silver";
+
+.H1-MO {
+  color: #f3b562;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.H2-AM {
+  font-size: 41px;
+  text-transform: uppercase;
+  color: #647b64;
+}

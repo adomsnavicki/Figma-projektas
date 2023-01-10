@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Avenir-bold";
+  src: url(Fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url(Fonts/AvenirNextLTPro-Regular.otf);
+}
+
+$font-size-20px: 20px;
+
+$color-black: black;
+$color-white: white;
+$button-color: #66ac66;
+$background-link: linear-gradient(#647b64, #66ac66);
+$background-body: linear-gradient(
+  90deg,
+  rgba(249, 249, 255, 1) 0%,
+  rgba(254, 228, 174, 1) 93%
+);
+$background-body2: rgb(249, 249, 255);
+$background-sbox: linear-gradient(
+  11deg,
+  rgba(213, 218, 216, 1) 0%,
+  rgba(255, 247, 247, 1) 48%
+);
+$background-sbox2: rgb(213, 218, 216);
+
+$screen-xxxl: 1599px;
+$screen-xxl: 1250px;
+$screen-xl: 900px;
+$screen-md: 700px;
+$screen-sm: 500px;
+$screen-xs: 360px;

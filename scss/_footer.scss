@@ -1,0 +1,142 @@
+.footer {
+  padding: 80px 0 80px 0;
+  .footer-items {
+    @include xxl {
+      padding-left: 50px;
+      flex-wrap: wrap;
+      display: flex;
+    }
+    display: flex;
+    width: 100%;
+  }
+  .Copyright {
+    @include xl {
+      width: 100%;
+      padding-left: 50px;
+    }
+    @include md {
+      width: 80%;
+      padding-left: 50px;
+    }
+    @include xs {
+      width: 50%;
+      padding: 0;
+    }
+    width: 25%;
+  }
+  .company {
+    @include xl {
+      width: 30%;
+      padding-left: 50px;
+    }
+    @include md {
+      width: 25%;
+      padding-left: 50px;
+    }
+    @include xs {
+      width: 100%;
+      padding: 30px 0 30px 0;
+    }
+    width: 25%;
+  }
+  .support {
+    @include xl {
+      width: 50%;
+    }
+    @include md {
+      width: 25%;
+    }
+    @include xs {
+      width: 100%;
+      padding: 30px 0 30px 0;
+    }
+    width: 25%;
+  }
+  .message {
+    @include xxl {
+      width: 60%;
+      margin-top: 40px;
+    }
+    @include xl {
+      width: 100%;
+    }
+    @include xs {
+      width: 60%;
+      padding: 30px 0 30px 0;
+    }
+
+    width: 25%;
+    color: #647b64;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .footer-li {
+    @include xl {
+      height: 40px;
+    }
+    @include md {
+      height: 40px;
+    }
+    align-items: center;
+    display: flex;
+    height: calc(100% / 6);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  li:first-child {
+    color: #647b64;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .button-link {
+    height: 20%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .info-top {
+    p {
+      width: 50%;
+    }
+  }
+  .message-items {
+    @include xl {
+      width: 40%;
+      padding-left: 50px;
+    }
+    @include md {
+      width: 40%;
+      padding-left: 50px;
+    }
+    @include xs {
+      padding: 0;
+    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-text {
+      margin-top: 10px;
+    }
+  }
+  .message-h1 {
+    font-size: 20px;
+    color: #647b64;
+    font-weight: bold;
+  }
+  .logo-links {
+    @include xl {
+      margin-bottom: 40px;
+    }
+    @include md {
+      margin-bottom: 40px;
+    }
+  }
+}

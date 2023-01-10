@@ -1,0 +1,79 @@
+.support-boxes {
+  @include xl {
+    padding-left: 50px;
+  }
+  @include md {
+    padding-left: 50px;
+  }
+  @include xs {
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  position: relative;
+
+  display: flex;
+  gap: 30px;
+  width: 100%;
+
+  .box {
+    @include xs {
+      padding: 10px 10px;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    padding: 80px 30px;
+    p {
+      width: 50%;
+    }
+
+    border-radius: 20px;
+  }
+  .box:nth-child(1) {
+    background: $background-sbox;
+    width: calc(100% / 3);
+  }
+  .box:nth-child(2) {
+    background-color: #647b64;
+    color: $color-white;
+    width: calc(100% / 3);
+  }
+  .box:nth-child(3) {
+    background: $background-sbox;
+    width: calc(100% / 3);
+    z-index: 2;
+  }
+}
+.support-boxes-container::before {
+  @include xl {
+    left: 2%;
+  }
+  @include md {
+    left: 2%;
+  }
+  @include xs {
+    display: none;
+  }
+  content: "";
+  left: -3%;
+  top: 20%;
+  position: absolute;
+  height: 260px;
+  width: 260px;
+  background: url(/IMG/box-background.svg);
+}
+.support-boxes-container::after {
+  content: "";
+  left: 90%;
+  top: 20%;
+  position: absolute;
+  height: 260px;
+  width: 470px;
+  background: linear-gradient(
+    63deg,
+    rgba(240, 220, 197, 1) 59%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 1;
+  border-radius: 5px;
+}

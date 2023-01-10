@@ -1,0 +1,75 @@
+.header {
+  @include xxl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 120px;
+    background: rgb(240, 220, 197);
+
+    padding: 0 15px;
+    @include md {
+      padding: 0 15px;
+      background: white;
+    }
+  }
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  .header-nav {
+    @include xxl {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    padding: 0;
+    display: flex;
+    column-gap: 48px;
+    a:hover {
+      color: white;
+    }
+    li:hover {
+      cursor: pointer;
+      background-color: $button-color;
+      color: white;
+    }
+    li {
+      display: inline;
+      padding: 10px;
+    }
+    li:last-child {
+      background-color: $button-color;
+      border-radius: 4px;
+      a {
+        color: $color-white;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $color-black;
+      font-size: $font-size-20px;
+    }
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .hamburger {
+    @include xxl {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    display: none;
+
+    img {
+      height: 50px;
+      width: 50px;
+      margin-right: 20px;
+    }
+  }
+}

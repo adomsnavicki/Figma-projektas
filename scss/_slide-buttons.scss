@@ -1,0 +1,47 @@
+.slide-buttons {
+  @include xl {
+    padding-left: 50px;
+  }
+  @include md {
+    padding-left: 50px;
+  }
+  @include xs {
+    padding: 0 0 20px 10px;
+  }
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 40px;
+
+  .slide-title {
+    @include xs {
+      display: none;
+    }
+  }
+
+  .button-1 {
+    img:hover {
+      height: 40px;
+    }
+    display: flex;
+  }
+
+  .button-2:hover {
+    font-size: 200px;
+  }
+  .button-2 {
+    img:hover {
+      height: 60px;
+    }
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #647b64;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+}

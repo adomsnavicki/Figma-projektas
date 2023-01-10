@@ -1,0 +1,36 @@
+.support-title {
+  @include xl {
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+  @include xs {
+    padding: 0 0 20px;
+  }
+
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .H1-MO {
+    @include md {
+      padding-left: 200px;
+    }
+    @include xs {
+      font-size: 16px;
+      padding: 0;
+    }
+    margin: 0;
+  }
+  .H2-AM {
+    @include md {
+      padding-left: 150px;
+    }
+    @include xs {
+      font-size: 24px;
+      padding: 10px 0;
+    }
+    margin: 0;
+    padding: 20px 0 60px 0;
+  }
+}

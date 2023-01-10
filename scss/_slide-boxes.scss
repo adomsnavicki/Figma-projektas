@@ -1,0 +1,60 @@
+.slide-boxes {
+  @include xl {
+    padding-left: 50px;
+  }
+  @include md {
+    padding-left: 50px;
+  }
+  @include xs {
+    padding: 10px 0 40px 0;
+  }
+  padding-bottom: 200px;
+
+  gap: 20px;
+
+  background-color: white;
+  display: flex;
+
+  .slide-box-top {
+    display: flex;
+  }
+  .slide-boxs {
+    @include xs {
+      min-width: auto;
+    }
+    min-width: 440px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e6e7;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+
+  .name {
+    margin: 16px 0 8px 0;
+    font-weight: bold;
+  }
+  .lastname {
+    margin: 0;
+  }
+}
+.slide-boxs:nth-child(1):hover {
+  background-color: gray;
+  cursor: pointer;
+  padding: 20px 20px;
+}
+.slide-boxs:nth-child(2):hover {
+  background-color: gray;
+  cursor: pointer;
+  padding: 20px 20px;
+}
+.slide-boxs:nth-child(3):hover {
+  background-color: gray;
+  cursor: pointer;
+  padding: 20px 20px;
+}
+.slide-boxs:nth-child(4):hover {
+  background-color: gray;
+  cursor: pointer;
+  padding: 20px 20px;
+}

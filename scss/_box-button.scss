@@ -1,0 +1,22 @@
+.box-button {
+  margin-left: 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: $color-white;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.button-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: $background-link;
+  width: 65%;
+  padding: 30px 0 30px 0;
+  justify-content: space-between;
+}
+
+.box-link-svg {
+  margin-right: 29px;
+}

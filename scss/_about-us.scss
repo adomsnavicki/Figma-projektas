@@ -1,0 +1,79 @@
+.about-us-container {
+  margin: 150px 0 150px 0;
+  display: flex;
+  gap: 60px;
+  @include xs {
+    margin: 0;
+  }
+
+  .right-side {
+    @include xs {
+      padding-left: 0;
+    }
+    padding: 120px 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    .box-p {
+      padding: 30px 0 30px 0;
+    }
+    .box-top-header {
+      width: 100%;
+      background: white;
+      .H1-MO {
+        margin: 0;
+        padding-bottom: 15px;
+      }
+      .H2-AM {
+        margin: 0;
+      }
+    }
+
+    .box-link-svg {
+      @include xs {
+        margin-left: 100px;
+      }
+    }
+
+    .button-link {
+      @include xs {
+        justify-content: flex-start;
+        height: 20px;
+      }
+      width: 100%;
+    }
+  }
+  .left-side {
+    @include md {
+      width: 5%;
+    }
+    @include xs {
+      display: none;
+    }
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .left-side::after {
+    @include md {
+      left: -500px;
+    }
+    content: "";
+    width: 600px;
+    height: 550px;
+    top: 100px;
+    left: 20px;
+    position: absolute;
+    background: linear-gradient(
+      63deg,
+      rgba(255, 255, 255, 1) 30%,
+      rgba(240, 220, 197, 1) 100%
+    );
+    z-index: -1;
+  }
+}

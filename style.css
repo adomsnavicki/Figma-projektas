@@ -553,7 +553,7 @@ p {
   position: absolute;
   height: 260px;
   width: 260px;
-  background: url(IMG/box-background.svg);
+  background: url(.IMG/box-background.svg);
 }
 @media screen and (max-width: 900px) {
   .support-boxes-container::before {
